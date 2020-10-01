@@ -258,65 +258,100 @@ border-radius: 5px;
 
 
 /*-----About section----*/
-.about-section{
-	background: url("../images/image10.jpg");
-	background-repeat: no-repeat;
-	background-size: 70%;
-	background-color: #ccc;
-	overflow: hidden;
-	padding: 100px 0;
 
+
+	.about-section{
+	
+	background:url("../images/bg5.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
+	padding:60px 0;
+	/*
+	display:inline-block;*/
+	
+		}
+
+.inner-width{
+	width:100%;
+	max-width:1200px;
+	margin:auto;
+	padding:0 20px;
+	overflow:hidden;
 }
-.about-inner-container{
-	width:50%;
-	float: right;
-	background-color: #f1f1f1;
-	padding: 100px;
+
+.section-title{
+	text-align:center;
+	color:#ddd;
+	text-transform:uppercase;
+	font-size:30px;
 }
-.about-inner-container h1{
-	margin-bottom: 50px;
-	font-size: 30px;
-	font-weight: 900;
-	color:#071a52;
-	text-transform: uppercase;
+.border{
+	width:160px;
+	height:2px;
+	background:#ccc;
+	margin:20px auto;
 }
-.about-text{
-	font-size:16px;
-	color:#071a52;
-	line-height:30px;
-	text-align:justify;
-	margin-bottom: 40px;
-}
-.skills{
+
+.about-container{
 	display:flex;
-	justify-content: space-between;
-	font-weight: 700;
+	flex-wrap:wrap;
+	justify-content:center;
 }
-.team{
-	display:flex;
-	justify-content: space-between;
-	font-weight: 700;
-	text-align: center;
+.about-box{
+	max-width:33.33%;
+	padding:10px;
+	text-align:center;
+	color:#ddd;
+	cursor:pointer;
+}
+
+.about-image{
+	display:inline-block;
+	width:70px;
+	height:70px;
+	border:3px solid transparent;
+	color:#ccc;
+	margin-bottom:30px;
+	margin-top:16px;
+	transition:0.3s linear;
 	
 }
-.team-imgs{
-	border-radius: 50%;
-}
-.about-inner-container2{
-	width:50%;
-	float: right;
-	background-color: #f1f1f1;
-	padding: 200px;
-}
-.about-inner-container2 h1{
-	margin-bottom: 50px;
-	font-size: 30px;
-	font-weight: 900;
-		color: #071a52;
+.about-image img{
+		border-radius: 50%;
 
-		text-transform: uppercase;
+}
+.about-text{
+	text-align: center;
+	color:#ddd;
 }
 
+/*.about-box:hover .about-image{
+	background:#ccc;
+	color:#ddd;
+}*/
+.about-title{
+	font-size:18px;
+	text-transform:uppercase;
+	margin-bottom:10px;
+}
+.about-desc{
+	font-size:14px;
+}
+@media screen and (max-width:960px){
+	.about-box{
+		max-width:45%;
+	}
+}
+@media screen and (max-width:768px){
+	.about-box{
+		max-width:50%;
+	}
+}@media screen and (max-width:480px){
+	.about-box{
+		max-width:100%;
+	}
+	
+}
 
 
 
